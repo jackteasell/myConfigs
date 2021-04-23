@@ -101,7 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
 alias live-server="/home/whitehat/node_modules/live-server/live-server.js"
-alias fuck="python3 /home/whitehat/dev/funproj/allwork.py"
 echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/whitehat/.zprofile
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
