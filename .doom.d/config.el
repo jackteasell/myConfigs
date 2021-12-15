@@ -49,7 +49,13 @@
  (setq org-refile-targets '(("~/Dropbox/emacs/agenda/projects.org" :maxlevel . 3)
                             ("~/Dropbox/emacs/agenda/someday.org" :level . 1)
                             ("~/Dropbox/emacs/agenda/agenda.org" :maxlevel . 2)))
- (setq org-todo-keywords '((sequence "TODO(t)" "WAITING(w)" "EVENT(e)" "|" "DONE(d)" "CANCELLED(c)")))
+ (setq org-todo-keywords
+       '((sequence "TODO" "IN-PROGRESS" "EVENT" "WAITING" "|" "DONE" "CANCELED"))
+       )
+
+ (setq org-todo-keyword-faces
+       '(("IN-PROGRESS" . "orange") ("WAITING" . "magenta") ("CANCELED" . "red") ("DONE" . "green"))
+       )
 
  (require 'org-bullets)
  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
